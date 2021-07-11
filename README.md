@@ -10,3 +10,11 @@ Parking aid can be seperate from tail light recognition.
 
 Tail light recognition:
 Imageai need to download, annotate, train it to recognize my taillights with the reverse lights on. 
+
+Training:
+Training to detect my tail lights and my tail lights in reverse, infront of my garage. Because of this just used small training data i could gather my self. 
+Took video of my car pulling in and out of the garage forward and reverse. Labeled the images tl for tail light and tlr for taillight reverse. 
+ffmpeg video into frames and labeled the frames. 
+I think since i just need it to know tail light reverse for my garage and use case it will be fine.
+Trained over night and it appears to be working.
+
