@@ -18,3 +18,15 @@ ffmpeg video into frames and labeled the frames.
 I think since i just need it to know tail light reverse for my garage and use case it will be fine.
 Trained over night and it appears to be working.
 
+7/18/2021:
+-Summary: problems encountered with imageai model on pi4
+
+- had to completely rebuild/retrain the model as the .m5 model that is output from imageai would not run on tflite on the raspberry pi when converting the imageai model to the tflite model using the provided function.
+
+- Retraining the model locally was not possible as for what ever reason cannot get tflite_model_maker to install. Took short cut path and moved the training to google cloud https://console.cloud.google.com/
+
+- Was pretty simple, uploaded the training images to a cloud container. Converted the PascalVOC.xml label files into csv format
+- -- changes x/y cords to relative percent location [0-1] instead of size and pixel location easy to convert
+- paid to train model on google over night( i think its like you get 300$ free at first so was free)
+- the model was successful and is now successfully running on the pi4 recognizing tail lights from a screen. Need to move to garage to test if it works on actual car
+
