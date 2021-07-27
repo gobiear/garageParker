@@ -1,4 +1,7 @@
 # garageParker
+7/27/2021:
+-added stl to hold rpi on wall with camera attached. very specific to my use case.
+
 7/25/2021:
 -Sumary: Simple brakets made to hold continuous motion servos to ceiling and simple "spools" made to hold fishing line to raise and lower indicator. Deployed and working in garage now
 
